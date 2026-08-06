@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animoos — Gelo saborizado para quem não aceita momento sem graça</title>
+<meta name="description" content="Gelo comum e saborizado com entrega em Campos do Jordão. Seis sabores: melancia, maçã verde, morango, uva, coco e maracujá.">
+<meta name="theme-color" content="#0e0f12">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Animoos — Gelo saborizado para quem não aceita momento sem graça">
+<meta property="og:description" content="Mais sabor na bebida. Mais animação no momento. Entregas em Campos do Jordão, SP.">
+<meta property="og:image" content="assets/img/packs/maca-verde.png">
+
+<link rel="icon" href="assets/img/brand/isotipo.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css?v=31">
+</head>
+
+<body class="is-loading">
+
+<!-- ===== preloader ===== -->
+<div class="loader" id="loader">
+  <div class="loader-logo"><img src="assets/img/brand/animoos-horizontal-verde.svg" alt="Animoos"></div>
+  <div class="loader-bar"><i id="loaderBar"></i></div>
+</div>
+
+<!-- ===== nav ===== -->
+<header class="nav" id="nav">
+  <a class="brand" href="#topo" aria-label="Animoos — início">
+    <img src="assets/img/brand/animoos-horizontal-branco.svg" alt="Animoos">
+  </a>
+  <nav class="nav-links" aria-label="Navegação principal">
+    <a href="#sabores">Sabores</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#momentos">Momentos</a>
+    <a href="#entrega">Entrega</a>
+    <a href="#gelo-comum">Gelo comum</a>
+  </nav>
+  <a class="btn" href="#pedido" data-magnetic>
+    Peça agora
+    <span class="arrow" aria-hidden="true">
+      <svg viewBox="0 0 12 12" fill="none"><path d="M2 10 10 2M4 2h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+  </a>
+</header>
+
+<main id="topo">
+
+  <!-- ===================================================================
+       1 · HERO
+       =================================================================== -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"><canvas id="frost"></canvas></div>
+
+    <div class="hero-media" aria-hidden="true">
+      <video src="assets/video/hero.mp4" autoplay loop muted playsinline preload="auto"></video>
+    </div>
+
+    <div class="hero-inner shell">
+      <h1 data-type aria-label="Gelo saborizado para quem não aceita momento sem graça.">
+        <span class="type-ghost" aria-hidden="true">Gelo saborizado para quem não aceita momento sem graça.</span>
+        <span class="type-out"></span>
+      </h1>
+
+      <p class="hero-lede" data-reveal>
+        Com <strong>sabores marcantes</strong>, qualidade de verdade e
+        <strong>entrega ágil</strong>, a Animoos transforma o que está no copo
+        e muda o clima ao redor dele.
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a class="btn btn--lg" href="#pedido" data-magnetic>
+          Peça agora
+          <span class="arrow" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none"><path d="M2 10 10 2M4 2h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <p class="hero-claim" data-reveal>Mais sabor na bebida. <span class="hl">Mais animação no momento.</span></p>
+      <p class="hero-note" data-reveal>Gelo comum e saborizado com entrega em Campos do Jordão.</p>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">Role<i></i></div>
+  </section>
+
+  <!-- ===== ticker ===== -->
+  <div class="ticker" data-ticker="-1">
+    <div class="ticker-track">
+      <span style="--c:var(--melancia)">Melancia</span><span style="--c:var(--maca)">Maçã Verde</span><span style="--c:var(--morango)">Morango</span><span style="--c:var(--uva)">Uva</span><span style="--c:var(--coco)">Coco</span><span style="--c:var(--maracuja)">Maracujá</span>
+    </div>
+  </div>
+  <div class="ticker ticker--flip" data-ticker="1">
+    <div class="ticker-track">
+      <span>Festas</span><span>Bares</span><span>Adegas</span><span>Eventos</span><span>Em casa</span><span>Conveniências</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       2 · MAIS DO QUE GELO
+       =================================================================== -->
+  <section class="section" id="marca">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Mais do que gelo</p>
+          <h2 data-split>O gelo entra no copo. A experiência toma conta do momento.</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>A Animoos nasceu para deixar bebidas mais bonitas, saborosas e interessantes.</p>
+          <p>Produzimos gelos saborizados que acrescentam cor, personalidade e novas possibilidades a cada combinação.</p>
+        </div>
+      </div>
+
+      <div class="more-grid">
+        <div data-reveal>
+          <ul class="more-list">
+            <li>Para uma festa com os amigos.</li>
+            <li>Para um evento especial.</li>
+            <li>Para o bar que quer surpreender.</li>
+            <li>Para quem acredita que momentos bons merecem mais sabor.</li>
+          </ul>
+        </div>
+        <figure class="more-figure" data-reveal>
+          <img src="assets/img/support/pessoa-02.jpg" alt="Mulher segurando o sachê de maçã verde ao lado de um copo" loading="lazy" data-parallax>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       3 · REEL — vídeo dos seis sabores, avançando com o scroll
+       =================================================================== -->
+  <section class="reel" id="reel">
+    <div class="reel-sticky">
+      <video id="reelVideo" src="assets/video/sabores.mp4" muted loop playsinline preload="auto"
+             aria-label="As seis embalagens Animoos à beira da piscina, sobre gelo"></video>
+      <p class="reel-tag" id="reelTag"><span aria-hidden="true"></span>Role aqui para ouvir os sabores</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4 · SABORES — o copo que enche
+       =================================================================== -->
+  <section class="flavors" id="sabores">
+    <div class="shell flavors-intro">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Sabores</p>
+          <h2 data-split>Seis sabores. Infinitas formas de animar.</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>Escolha o sabor que combina com sua bebida, seu evento ou seu momento.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-stage" id="glassStage">
+      <div class="glass-wash" aria-hidden="true"></div>
+
+      <h3 class="glass-name" id="glassName" aria-live="polite">
+        <span class="gn-line"><span>Melancia</span></span>
+      </h3>
+
+      <div class="glass" aria-hidden="true">
+        <div class="glass-liquid" id="glassLiquid"></div>
+        <div class="glass-bubbles" id="glassBubbles"></div>
+        <div class="glass-shine"></div>
+      </div>
+
+      <div class="glass-pack" id="glassPack" aria-hidden="true">
+        <img src="assets/img/packs/melancia.png"   alt="" data-flavor="melancia" class="is-active" loading="lazy">
+        <img src="assets/img/packs/maca-verde.png" alt="" data-flavor="maca"     loading="lazy">
+        <img src="assets/img/packs/morango.png"    alt="" data-flavor="morango"  loading="lazy">
+        <img src="assets/img/packs/uva.png"        alt="" data-flavor="uva"      loading="lazy">
+        <img src="assets/img/packs/coco.png"       alt="" data-flavor="coco"     loading="lazy">
+        <img src="assets/img/packs/maracuja.png"   alt="" data-flavor="maracuja" loading="lazy">
+      </div>
+
+      <div class="glass-copy">
+        <span class="idx" id="glassIdx">01 / 06</span>
+        <p id="glassDesc">Leve, refrescante e cheia de personalidade. Um sabor vibrante para combinações descontraídas e momentos que pedem frescor.</p>
+      </div>
+
+      <div class="glass-progress" id="glassProgress" aria-hidden="true"></div>
+    </div>
+
+    <div class="shell flavors-outro">
+      <p class="lede" data-reveal>Todos os sabores em sachê de 190&nbsp;g, rendendo 200&nbsp;ml no copo.</p>
+      <a class="btn" href="#pedido" data-magnetic data-reveal>
+        Escolher meus sabores
+        <span class="arrow" aria-hidden="true">
+          <svg viewBox="0 0 12 12" fill="none"><path d="M2 10 10 2M4 2h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       4 · EXPERIÊNCIA
+       =================================================================== -->
+  <section class="section xp is-light" id="experiencia">
+    <div class="shell">
+      <p class="eyebrow" data-reveal style="margin-bottom:clamp(2rem,4vw,3rem)">Experiência</p>
+
+      <div class="xp-grid">
+        <figure class="xp-figure" data-reveal>
+          <img src="assets/img/support/aventura.jpg" alt="Sachê Animoos de coco em cena de alta energia" loading="lazy" data-parallax>
+        </figure>
+
+        <div>
+          <div class="xp-lines" data-lines>
+            <span><i>Não é apenas sobre gelar a bebida.</i></span>
+            <span><i>É sobre ver o sabor ganhar espaço no copo.</i></span>
+            <span><i>É sobre descobrir novas combinações.</i></span>
+            <span><i>É sobre servir algo que chama atenção antes mesmo do primeiro gole.</i></span>
+          </div>
+
+          <div class="xp-compare" data-reveal>
+            <div>
+              <h3>Gelo de outras marcas</h3>
+              <p>Resfria a bebida e o sabor logo desaparece.</p>
+            </div>
+            <div>
+              <h3>Gelo Animoos</h3>
+              <p>Resfria, colore, dá sabor e vira parte do momento.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       5 · PARA TODOS OS MOMENTOS
+       =================================================================== -->
+  <section class="section" id="momentos">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Para todos os momentos</p>
+          <h2 data-split>Tem um sabor Animoos esperando por cada ocasião.</h2>
+        </div>
+      </div>
+
+      <div class="stack">
+        <article class="stack-card" data-stack>
+          <div>
+            <span class="tag">Festas e encontros</span>
+            <h3>Deixa a mesa mais bonita e o clima mais animado</h3>
+          </div>
+          <p>Para deixar a mesa mais bonita, as bebidas mais interessantes e o clima muito mais animado.</p>
+        </article>
+
+        <article class="stack-card" data-stack>
+          <div>
+            <span class="tag">Bares e restaurantes</span>
+            <h3>Drinks autorais que valorizam o cardápio</h3>
+          </div>
+          <p>Para criar drinks autorais, valorizar o cardápio e oferecer uma experiência diferente aos clientes.</p>
+        </article>
+
+        <article class="stack-card" data-stack>
+          <div>
+            <span class="tag">Adegas e conveniências</span>
+            <h3>Um produto atrativo, prático e com giro</h3>
+          </div>
+          <p>Para ampliar as possibilidades de venda com um produto atrativo, prático e cheio de personalidade.</p>
+        </article>
+
+        <article class="stack-card" data-stack>
+          <div>
+            <span class="tag">Eventos</span>
+            <h3>A bebida vira parte da decoração</h3>
+          </div>
+          <p>Para transformar bebidas em parte da decoração, da experiência e das lembranças.</p>
+        </article>
+
+        <article class="stack-card" data-stack>
+          <div>
+            <span class="tag">Momentos em casa</span>
+            <h3>Servir algo especial sem esperar ocasião</h3>
+          </div>
+          <p>Porque você não precisa esperar uma ocasião especial para servir algo especial.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       6 · QUALIDADE
+       =================================================================== -->
+  <section class="section quality" id="qualidade">
+    <div class="shell">
+      <div class="quality-grid">
+        <div>
+          <p class="eyebrow" data-reveal>Qualidade</p>
+          <h2 data-split style="margin:1.6rem 0 2.4rem">Sabor incomparável começa com qualidade de verdade.</h2>
+
+          <div class="quality-nots" data-reveal>
+            <b>Não basta ter cor.</b>
+            <b>Não basta estar gelado.</b>
+          </div>
+
+          <div class="prose" data-reveal>
+            <p>Para levar o nome Animoos, cada produto precisa entregar sabor agradável, boa apresentação e uma experiência à altura do momento.</p>
+            <p>Produzimos nossos gelos com atenção a cada etapa, buscando consistência e qualidade em cada unidade.</p>
+            <p><strong>Porque, quando o produto entra no seu copo, nossa marca também está ali.</strong></p>
+          </div>
+        </div>
+
+        <figure class="quality-figure" data-reveal>
+          <img src="assets/img/support/linha.jpg" alt="Os seis sabores Animoos em embalagem de 1 kg, com as frutas correspondentes" loading="lazy" data-parallax>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       7 · AGILIDADE
+       =================================================================== -->
+  <section class="section" id="entrega">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Agilidade</p>
+          <h2 data-split>O momento não espera. Seu gelo também não deveria.</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>A Animoos atende Campos do Jordão com uma operação pensada para tornar cada pedido mais simples e ágil.</p>
+          <p>Sem complicação. <strong>Sem deixar a animação para depois.</strong></p>
+        </div>
+      </div>
+
+      <figure class="speed-figure" data-reveal>
+        <img src="assets/img/support/entrega.jpg" alt="Entregador Animoos em movimento pela cidade, com a bag da marca" loading="lazy" data-parallax>
+        <figcaption class="speed-badge">
+          <strong>Gelo, sabor<br>e agilidade.<br><span class="hl">Sob medida.</span></strong>
+        </figcaption>
+      </figure>
+
+      <div class="speed-steps">
+        <div data-reveal>
+          <span class="step">01 — Você escolhe</span>
+          <p>O tipo de gelo, os sabores e a quantidade.</p>
+        </div>
+        <div data-reveal>
+          <span class="step">02 — Nós organizamos</span>
+          <p>Separamos o pedido com o cuidado que o produto exige.</p>
+        </div>
+        <div data-reveal>
+          <span class="step">03 — Chega até você</span>
+          <p>Com rapidez e qualidade, pronto para servir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       8 · GELO COMUM
+       =================================================================== -->
+  <section class="section plain is-light" id="gelo-comum">
+    <div class="shell">
+      <div class="plain-grid">
+        <div>
+          <p class="eyebrow" data-reveal>Gelo comum</p>
+          <h2 data-split style="margin-top:1.5rem">O sabor é uma escolha. Ficar sem gelo não.</h2>
+        </div>
+        <div class="prose" data-reveal>
+          <p>Além dos nossos sabores, também produzimos e entregamos gelo comum para festas, estabelecimentos, eventos e diferentes necessidades.</p>
+          <p>Para gelar bebidas, abastecer operações e garantir que nenhum momento pare antes da hora.</p>
+          <p style="margin-top:1.6rem">
+            <a class="btn" href="#pedido" data-magnetic>
+              Pedir gelo comum
+              <span class="arrow" aria-hidden="true">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 10 10 2M4 2h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="plain-triad" data-reveal>
+        <div><b>A mesma agilidade</b><small>Pedido simples, entrega rápida.</small></div>
+        <div><b>O mesmo cuidado</b><small>Produção acompanhada em cada etapa.</small></div>
+        <div><b>A mesma qualidade</b><small>O padrão Animoos, sem exceção.</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       9 · PROVA DE MARCA
+       =================================================================== -->
+  <section class="section proof" id="prova">
+    <div class="shell">
+      <p class="eyebrow eyebrow--plain" data-reveal>Prova de marca</p>
+
+      <p class="counter" data-reveal>
+        <span data-count="2000">0</span><sup>+ vendas</sup>
+      </p>
+
+      <h2 data-split style="max-width:20ch;margin-inline:auto">Quando o produto é bom, o cliente volta.</h2>
+
+      <div class="prose" data-reveal style="margin-top:1.8rem">
+        <p style="margin-inline:auto;text-align:center;max-width:60ch">Em um único mês, a Animoos ultrapassou a marca de 2.000 vendas. Esse resultado não representa apenas volume. Representa pessoas que provaram, aprovaram e escolheram viver novos momentos com a nossa marca.</p>
+      </div>
+
+      <div class="proof-lines" data-reveal>
+        <span>Um pedido de cada vez</span>
+        <span>Uma entrega de cada vez</span>
+        <span>Um copo cheio de sabor de cada vez</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       10 · MANIFESTO
+       =================================================================== -->
+  <section class="section manifesto is-light" id="manifesto">
+    <figure class="pack-cluster" data-cluster aria-hidden="true">
+      <img src="assets/img/packs/melancia.png"   alt="" loading="lazy" style="--x:9%;  --y:1%;  --s:1;    --r:-8deg">
+      <img src="assets/img/packs/maca-verde.png" alt="" loading="lazy" style="--x:58%; --y:-3%; --s:.86;  --r:7deg">
+      <img src="assets/img/packs/morango.png"    alt="" loading="lazy" style="--x:28%; --y:29%; --s:1.08; --r:3deg">
+      <img src="assets/img/packs/uva.png"        alt="" loading="lazy" style="--x:66%; --y:26%; --s:.94;  --r:-6deg">
+      <img src="assets/img/packs/coco.png"       alt="" loading="lazy" style="--x:7%;  --y:60%; --s:.82;  --r:11deg">
+      <img src="assets/img/packs/maracuja.png"   alt="" loading="lazy" style="--x:44%; --y:62%; --s:1;    --r:-4deg">
+    </figure>
+
+    <div class="shell">
+      <p class="eyebrow" data-reveal>Manifesto</p>
+
+      <div class="manifesto-body" data-words>
+        <p class="is-key">Momentos sem graça não combinam com a gente.</p>
+        <p class="is-key">gelo saborizado para transformar cada copão em uma experiência mais intensa, colorida e marcante.</p>
+        <p>E, para os drinks que não podem ficar sem um bom gelo, o gelo de água da Animoos chega com praticidade, qualidade e presença no copo.</p>
+        <p>Porque refrescar é apenas o começo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       11 · CTA FINAL
+       =================================================================== -->
+  <section class="cta" id="pedido">
+    <div class="shell cta-inner">
+      <h2 data-split>Seu próximo momento pode ter muito mais sabor.</h2>
+
+      <div class="cta-flavors" data-reveal>
+        <a href="#sabores" style="--c:var(--melancia)">Melancia</a>
+        <a href="#sabores" style="--c:var(--maca);--fg:var(--preto)">Maçã Verde</a>
+        <a href="#sabores" style="--c:var(--morango)">Morango</a>
+        <a href="#sabores" style="--c:var(--uva)">Uva</a>
+        <a href="#sabores" style="--c:var(--coco)">Coco</a>
+        <a href="#sabores" style="--c:var(--maracuja);--fg:var(--preto)">Maracujá</a>
+      </div>
+
+      <div class="prose" data-reveal>
+        <p style="margin-inline:auto;text-align:center;max-width:56ch">Ou peça seu gelo comum com a agilidade de quem entende que momentos bons não podem esperar.</p>
+      </div>
+
+      <div class="cta-actions" data-reveal style="margin-top:2.2rem">
+        <a class="btn" href="#" data-wa data-magnetic>
+          Fazer meu pedido
+          <span class="arrow" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none"><path d="M2 10 10 2M4 2h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a class="btn btn--ghost" href="#sabores" data-magnetic>
+          Conhecer os sabores
+          <span class="arrow" aria-hidden="true">
+            <svg viewBox="0 0 12 12" fill="none"><path d="M2 10 10 2M4 2h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <p class="cta-note" data-reveal>Entregas em Campos do Jordão, SP.</p>
+      <p class="cta-sign" data-reveal>Animoos. Gelo saborizado para quem não aceita momento sem graça.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================================================================
+     12 · RODAPÉ
+     =================================================================== -->
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><img src="assets/img/brand/animoos-horizontal-verde.svg" alt="Animoos"></div>
+        <p style="color:var(--cinza-meso);max-width:32ch">Gelo comum e saborizado em Campos do Jordão.</p>
+        <p class="footer-tag">Gelo, sabor e agilidade. Sob medida.</p>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-nav">
+          <li><a href="#" data-wa>WhatsApp</a></li>
+          <li><a href="https://instagram.com/animoos.gelo" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Atendimento</h4>
+        <ul class="footer-nav">
+          <li>Campos do Jordão, SP</li>
+          <li>Entregas na cidade e região</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Horários de entrega</h4>
+        <ul class="footer-nav">
+          <li>Segunda a sábado</li>
+          <li>10h — 22h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <span>© <span id="year">2026</span> Animoos. Todos os direitos reservados.</span>
+      <span class="footer-credit">
+        Projeto tech-web:
+        <a href="https://www.instagram.com/zerosete.co" target="_blank" rel="noopener" aria-label="Zerosete no Instagram">
+          <img src="assets/img/brand/zerosete.svg" alt="Zerosete" width="1400" height="124">
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" id="wa" href="#" data-wa aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.174.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 0 1 6.988 2.898 9.83 9.83 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413"/></svg>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/main.js?v=32"></script>
+</body>
+</html>
