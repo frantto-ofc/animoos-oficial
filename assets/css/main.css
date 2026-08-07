@@ -571,22 +571,32 @@ h2{ font-size:var(--t-lg); }
 }
 @keyframes pulso{ 0%,100%{ transform:scaleX(1); opacity:1 } 50%{ transform:scaleX(.4); opacity:.5 } }
 @media (max-width:860px){
-  .reel{ height:190vh; }
-  /* o vídeo é 16:9: recortar para retrato esconderia quase todas as embalagens.
-     A caixa encolhe para a faixa não ficar perdida no meio da tela preta. */
-  .reel-sticky{
-    height:72svh;
-    top:14svh;
-    display:grid;
-    align-content:center;
-    gap:1.4rem;
+  /* Em telas touch o vídeo toca silencioso enquanto está visível. Mantê-lo
+     sticky deixava apenas uma grande área preta em alguns navegadores móveis. */
+  .reel{
+    height:auto;
+    min-height:0;
+    padding-block:clamp(2.5rem,9svh,5rem);
   }
-  .reel-sticky video{ height:auto; aspect-ratio:16/9; }
+  .reel-sticky{
+    position:relative;
+    top:auto;
+    height:auto;
+    overflow:visible;
+  }
+  .reel-sticky video{
+    height:auto;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    background:var(--preto-900);
+  }
   .reel-sticky::after{ display:none; }
-  /* no fluxo, logo abaixo do vídeo — absoluta ela some no preto */
   .reel-tag{
-    position:static;
-    margin-inline:var(--gut);
+    left:var(--gut);
+    right:var(--gut);
+    bottom:clamp(.9rem,4vw,1.4rem);
+    font-size:clamp(.58rem,2.5vw,.72rem);
+    line-height:1.45;
   }
 }
 

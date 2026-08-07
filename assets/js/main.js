@@ -378,6 +378,42 @@ function animarVideoScroll(){
   const tag = document.querySelector('#reelTag');
   let somAtivadoPeloScroll = false;
 
+  /* Celulares não disparam `wheel`. Neles, o reel vira um vídeo silencioso
+     normal: toca apenas enquanto está visível e não depende do scrub para
+     revelar o primeiro quadro. O áudio continua exclusivo do mouse/desktop. */
+  const experienciaTouch = window.matchMedia('(max-width: 860px), (hover: none), (pointer: coarse)').matches;
+
+  if (experienciaTouch){
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+
+    if (tag){
+      const traco = tag.querySelector('span');
+      tag.replaceChildren(...(traco ? [traco] : []), document.createTextNode('Veja os sabores em movimento'));
+    }
+
+    const tocarSilencioso = () => {
+      video.muted = true;
+      video.play().then(() => tag?.classList.add('is-off')).catch(() => {
+        tag?.classList.remove('is-off');
+      });
+    };
+
+    const observador = new IntersectionObserver(([entrada]) => {
+      if (entrada.isIntersecting){
+        tocarSilencioso();
+      } else {
+        video.pause();
+        tag?.classList.remove('is-off');
+      }
+    }, { threshold: 0.25 });
+
+    observador.observe(secao);
+    secao.addEventListener('touchstart', tocarSilencioso, { passive: true });
+    return;
+  }
+
   // O áudio só é habilitado por uma rolagem do mouse enquanto o reel está
   // ocupando a tela. Cliques e teclas em outras partes da página não o liberam.
   const reelEstaAtivo = () => {
